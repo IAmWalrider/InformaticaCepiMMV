@@ -1,0 +1,354 @@
+body{
+   
+    background-color: rgb(14, 10, 20);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+.contato{
+  text-align: center;
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.historia{
+  text-align: center;
+  margin: 80px;
+  font-size: 1.05rem;
+}
+.augusto1{
+  color: #111;
+  position: static;
+  padding: 1em;
+  background: rgb(196, 196, 196);
+  margin-bottom: 1em;
+  padding-bottom: 3.5em;
+  text-align: center;
+  clip-path: polygon(50% 0%, 100% 0px, 100% 65%, 50% 100%, 279px 42.16%, 0px 0px);
+}
+.poligons{
+  position: static;
+  padding: 1em;
+  background: rgb(9, 5, 14);
+  margin-bottom: 1em;
+  padding-bottom: 3.5em;
+  text-align: center;
+  clip-path: polygon(50% 0%, 100% 0px, 100% 65%, 50% 100%, 279px 42.16%, 0px 0px);
+}
+.light-mode {
+  background: rgb(196, 196, 196);
+  color: rgb(0, 0, 0);
+}
+.light-mode header{
+  color: rgb(0, 0, 0);
+  background: rgb(128, 128, 128);
+}
+.light-mode .profile-card{
+  border-radius: 50px;
+  width: 350px;
+  position: static;
+  background: rgb(226, 226, 226);
+  
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.light-mode img{
+  display: block;
+  margin: 0px auto;
+  border: 5px solid rgb(128, 128, 128);
+}
+
+
+
+.profile-card{
+
+    
+    
+    width: 350px;
+    position: static;
+    
+    
+    
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    --border-size: 3px;
+    --border-angle: 0turn;
+ 
+    background-image: conic-gradient(from var(--border-angle), rgb(9, 5, 14), rgb(5, 5, 10) 50%,rgb(10, 5, 15)), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+    background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-animation: bg-spin 3s linear infinite;
+            animation: bg-spin 3s linear infinite;
+  }
+  @-webkit-keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  
+  
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+
+
+.celina{
+    font-size: 0.7rem;
+}
+
+.profile-card img{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10 px 60 px -10 px #ffffff40;
+}
+.profile-card-disc{
+  text-align: center;
+}
+.profile-card-disc h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    vertical-align: top;
+}
+.profile-card-info{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    @media screen (max-width){
+        gap:30px;
+    }
+}
+.profile-card-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    
+}
+.profile-card-social a{
+    display: inline-flex;
+    width:35px;
+    height:35px;
+    margin:10px;
+    border-radius:40%;
+    align-items:center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    flex-shrink: 0;
+    transition: all, 1s;
+
+}
+.facebook{
+    color: white;
+    background: linear-gradient(45deg, #caced6, #ffffff);
+    box-shadow: 0 4px 30px rgba(113, 129, 150, 0.5);
+}
+.instagramnao  {
+    color: white;
+    background: linear-gradient(45deg, #caced6, #ffffff);
+    box-shadow: 0 4px 30px rgba(113, 129, 150, 0.5);
+}
+.github{
+    color: white;
+    background: linear-gradient(45deg, #caced6, #ffffff);
+    box-shadow: 0 4px 30px rgba(113, 129, 150, 0.5);
+}
+.twitter{
+  color: white;
+  background: linear-gradient(45deg, #caced6, #ffffff);
+  box-shadow: 0 4px 30px rgba(113, 129, 150, 0.5);
+}
+
+.navul ul{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(5, 3, 8);
+    position: static;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+ 
+  .pupu a{
+    text-align: center;
+
+  }
+  .navli li{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navli li a {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navli li a:hover {
+    background-color: rgb(14, 10, 20);
+  }
+  
+  .dot {
+    height: 13px;
+    width: 13px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+.im img{
+    display: block;
+    margin: 0px auto;
+    border: 2px solid rgb(247, 135, 209);
+}
+.im{
+    text-align: center;
+    
+}
+.iconul ul{
+  font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(26, 26, 26);
+    
+    
+    right: 0;
+    width: 110%;
+
+}
+.iconul a{
+  text-align: center;
+}
+.iconli li{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.iconli li a{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 13px 14px;
+    text-decoration: none;
+
+}
+.box {
+	width: 400px;
+	display: inline-block;
+}
+.tables table{
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  
+}
+th{
+  text-align: center;
+  padding: 8px;
+  background-color: #30b3e7;
+  color: white;
+}
+td{
+  text-align: center;
+  padding: 8px;
+  
+}
+tr:nth-child(even){background-color: #161616}
+
+
+
+.shiny-button {
+  display: inline-block;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.1;
+  font-weight: normal;
+  font-family: sans-serif;
+  color: #FFFFFF;
+  font-size: 12px;
+  background-color: #30b3e7;
+  background-image: -webkit-linear-gradient(top, #35b5e8 0%, #35b5e8 48%, #30b3e7 49%, #30b3e7 82%, #35b5e8 100%);
+  background-image: -moz-linear-gradient(top, #35b5e8 0%, #35b5e8 48%, #30b3e7 49%, #30b3e7 82%, #35b5e8 100%);
+  background-image: -o-linear-gradient(top, #35b5e8 0%, #35b5e8 48%, #30b3e7 49%, #30b3e7 82%, #35b5e8 100%);
+  background-image: linear-gradient(top, #35b5e8 0%, #68b8d8 48%, #30b3e7 49%, #30b3e7 82%, #49bcea 100%);
+  border-color: hsl(197, 22%, 51%);
+  -webkit-box-shadow: inset 0 0 1px 1px #67c7ed, 0 0 1px 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 0 1px 1px #67c7ed, 0 0 1px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 1px 1px #67c7ed, 0 0 1px 3px rgba(0, 0, 0, 0.15);
+  -webkit-text-shadow: 1px 1px 1px #12779f;
+  -moz-text-shadow: 1px 1px 1px #12779f;
+  -o-text-shadow: 1px 1px 1px #12779f;
+  text-shadow: 1px 1px 1px #12779f;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  padding: 8.399999999999999px 21px 8.399999999999999px 21px;
+}
+
+.shiny-button strong {
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.shiny-button:hover {
+  color: #FFFFFF;
+  background-color: #3eb8e9;
+  background-image: -webkit-linear-gradient(top, #43baea 0%, #35b5e8 48%, #3eb8e9 49%, #3eb8e9 82%, #35b5e8 100%);
+  background-image: -moz-linear-gradient(top, #43baea 0%, #35b5e8 48%, #3eb8e9 49%, #3eb8e9 82%, #35b5e8 100%);
+  background-image: -o-linear-gradient(top, #35b5e8 0%, #35b5e8 48%, #3eb8e9 49%, #3eb8e9 82%, #35b5e8 100%);
+  background-image: linear-gradient(top, #43baea 0%, #74bedc 48%, #3eb8e9 49%, #3eb8e9 82%, #57c1ec 100%);
+  border-color: hsl(197, 22%, 52%);
+  -webkit-box-shadow: inset 0 0 1px 1px #7acef0, 0 0 1px 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 0 1px 1px #7acef0, 0 0 1px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 1px 1px #7acef0, 0 0 1px 3px rgba(0, 0, 0, 0.15);
+  -webkit-text-shadow: 1px 1px 1px #1481ad;
+  -moz-text-shadow: 1px 1px 1px #1481ad;
+  -o-text-shadow: 1px 1px 1px #1481ad;
+  text-shadow: 1px 1px 1px #1481ad;
+}
+
+.shiny-button:active {
+  color: #FFFFFF;
+  background-color: #22aee5;
+  background-image: -webkit-linear-gradient(top, #1baae2 0%, #30b3e7 100%);
+  background-image: -moz-linear-gradient(top, #1baae2 0%, #30b3e7 100%);
+  background-image: -o-linear-gradient(top, #1baae2 0%, #30b3e7 100%);
+  background-image: linear-gradient(top, #1baae2 0%, #30b3e7 100%);
+  padding: 9.399999999999999px 21px 7.399999999999999px 21px;
+}
+.flavio-murillo{
+  text-align: center;
+}
